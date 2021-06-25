@@ -7,13 +7,13 @@ body {
   /* min-height: 100vh; */
 }
 .headerTop {
-  background-color: #232f3e;
+  background-color: #97c6ff;
 
-  border-bottom: 1px solid #495159;
+  border-bottom: 1px solid #265e96;
 }
 /*#495159 border*/
 .navbar {
-  background-color: #1b2530;
+  background-color: #328ae9;
 }
 .navbarImg {
   height: 180px;
@@ -30,10 +30,10 @@ body {
   color: white;
 }
 .navbar-nav > li > a:active {
-  color: #ffd200;
+  color: #00ff73;
 }
 .navbar-nav > li > a:hover {
-  color: #ffd200;
+  color: #00ff73;
 }
 .mobile-menu {
   /* display: none; */
@@ -48,13 +48,13 @@ body {
   width: 900px;
 }
 .btnSearch {
-  background-color: #ffd200;
+  background-color: #00ff73;
   font-family: Poppins, Arial, Helvetica, sans-serif;
   color: black;
   font-size: 13px;
 }
 .btnSearch:hover {
-  background-color: #ffd200;
+  background-color: #00ff73;
 }
 .myDropdown {
   margin-left: -50px;
@@ -280,7 +280,7 @@ h2.active {
 /* FORM TYPOGRAPHY*/
 
 .myBtn {
-  background-color: #ffd200;
+  background-color: #00ff73;
   border: none;
   color: white;
   padding: 15px 80px;
@@ -469,7 +469,7 @@ input[type="text"]:placeholder {
   transition: width 0.2s;
 }
 .registerSpan {
-  color: #ffd200;
+  color: #00ff73;
 }
 
 .underlineHover:hover {
