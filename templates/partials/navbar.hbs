@@ -1,0 +1,72 @@
+<div class="navBar">
+  <div class="container-fluid headerTop">
+    <div class="d-flex flex-row bd-highlight mb-3 justify-content-between">
+      <div class="p-2 bd-highlight">
+        <a class="navbar-brand" href="/"><img
+            class="navbarImg"
+            src="./images/logo.png"
+            alt="logo"
+          /></a>
+      </div>
+
+      <div class="p-2 bd-highlight">
+        <form class="d-flex search">
+          <input
+            class="form-control me-2 searchField"
+            type="search"
+            placeholder="Search Items.."
+            aria-label="Search"
+          />
+          <button class="btn btn-primary btnSearch" type="submit">
+            Search
+          </button>
+        </form>
+      </div>
+      <div class="p-2 bd-highlight">
+        <div class="btn-group dropstart">
+          <button
+            type="button"
+            class="btn"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i class="fa fa-user" aria-hidden="true"></i>
+
+          </button>
+          <a href="/cart"><i class="fa fa-shopping-cart" aria-hidden="true">
+              <span class="cartCounter">{{ternary
+                  true
+                  session.cart.totalQty
+                  false
+                  0
+                }}
+              </span>
+
+            </i>
+          </a>
+
+          <span class="visually-hidden">Toggle Dropdown</span>
+
+          <ul class="dropdown-menu">
+            {{#if user}}
+              <li>
+                <form id="logout" action="/logout" method="POST">
+                  <a
+                    onclick="document.getElementById('logout').submit()"
+                    class="dropdown-item"
+                    style="cursor:pointer"
+                  >Logout</a>
+                </form>
+              </li>
+            {{else}}
+              <li>
+                <a class="dropdown-item" href="/login">Login</a>
+              </li>
+            {{/if}}
+            <li><a class="dropdown-item" href="/register">Sign Up</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
